@@ -10,13 +10,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "browser-sync": "^2.9.3",
-    "gulp": "^3.9.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-data": "^1.2.0",
     "gulp-pug": "^3.0.3",
-    "gulp-sass": "^2.0.4",
+    "gulp-sass": "3.0.0",
     "gulp-uglify": "^3.0.2"
   },
   "repository": {
@@ -29,5 +29,9 @@
     "pug",
     "sass",
     "browsersync"
-  ]
+  ],
+  "dependencies": {
+    "gulp-cli": "^2.2.0",
+    "gulp-rename": "^1.4.0"
+  }
 }

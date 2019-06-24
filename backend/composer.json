@@ -1,0 +1,12 @@
+{
+    "name": "thierryrenematos/backend",
+    "authors": [
+        {
+            "name": "thierry rene matos",
+            "email": "thierry.matos@stealthelook.com.br"
+        }
+    ],
+    "require": {
+        "catfan/medoo": "^1.6"
+    }
+}

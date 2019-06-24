@@ -1,0 +1,54 @@
+//- #myCarousel.carousel.slide(data-ride='carousel')
+//-     ol.carousel-indicators
+//-         li.active(data-target='#myCarousel', data-slide-to='0')
+//-         li(data-target='#myCarousel', data-slide-to='1')
+//-         li(data-target='#myCarousel', data-slide-to='2')
+//-     .carousel-inner
+
+//-         .carousel-item.active
+//-             div
+//-                 img(src="https://www.locfesta.com.br/new/wp-content/uploads/2018/09/banner04.jpg", alt="", class="img-fluid")
+//-             //- .container
+//-             //-     .carousel-caption.text-left
+//-             //-         h1= carousel
+//-             //-         p
+//-             //-             | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+//-             //-         p
+//-             //-             a.btn.btn-lg.btn-primary(href='#', role='button') Sign up today
+//-         .carousel-item
+//-             div
+//-                 img(src="https://www.locfesta.com.br/new/wp-content/uploads/2018/05/banner07.jpg", alt="", class="img-fluid")
+//-             //- .container
+
+//-         .carousel-item
+//-             div
+//-                 img(src="https://www.locfesta.com.br/new/wp-content/uploads/2015/06/slide1.png", alt="", class="img-fluid")
+//-             //- .container
+
+//-     a.carousel-control-prev(href='#myCarousel', role='button', data-slide='prev')
+//-         span.carousel-control-prev-icon(aria-hidden='true')
+//-         span.sr-only Previous
+
+//-     a.carousel-control-next(href='#myCarousel', role='button', data-slide='next')
+//-         span.carousel-control-next-icon(aria-hidden='true')
+//-         span.sr-only Next
+
+// Slider main container
+.swiper-container.mb-3.mb-md-5
+    // Additional required wrapper
+    .swiper-wrapper
+        // Slides
+        .swiper-slide
+            div
+                img(src="https://www.locfesta.com.br/new/wp-content/uploads/2018/09/banner04.jpg", alt="", )
+        .swiper-slide
+             div
+                img(src="https://www.locfesta.com.br/new/wp-content/uploads/2018/05/banner07.jpg", alt="", )
+        .swiper-slide
+            div
+                img(src="https://www.locfesta.com.br/new/wp-content/uploads/2015/06/slide1.png", alt="", )
+    // If we need pagination
+    .swiper-pagination
+    // If we need navigation buttons
+    .swiper-button-prev
+    .swiper-button-next

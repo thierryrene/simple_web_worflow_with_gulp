@@ -1,0 +1,18 @@
+doctype html
+html(lang='pt-br')
+
+	include _partials/head
+
+	body
+
+		header
+
+			include _partials/navbar
+
+		main(role='main')
+			hr
+			<?php var_dump($db, $_SERVER); ?>
+			hr
+		include _partials/footer
+
+		include _partials/scripts

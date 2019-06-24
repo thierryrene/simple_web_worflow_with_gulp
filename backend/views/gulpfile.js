@@ -9,7 +9,8 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   browserSync = require('browser-sync'),
   concat = require('gulp-concat'),
-  uglify = require('gulp-uglify');
+  uglify = require('gulp-uglify'),
+  rename = require('gulp-rename');
 
 /*
  * Directories here
@@ -44,6 +45,9 @@ gulp.task('pug', function () {
       process.stderr.write(err.message + '\n');
       this.emit('end');
     })
+    .pipe(rename({
+      extname: '.php'
+    }))
     .pipe(gulp.dest(paths.public));
 });
 

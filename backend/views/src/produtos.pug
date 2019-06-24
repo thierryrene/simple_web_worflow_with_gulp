@@ -1,0 +1,202 @@
+doctype html
+html(lang='pt-br')
+
+    include _partials/head
+
+    body(style="margin-top: 110px;")
+
+        header
+
+            include _partials/navbar
+
+        main(role='main')
+            .container.py-5
+                .row
+                    .div(class='col-12').py-3
+                        h1 Escolha um dos nossos produtos
+                
+                .container                    
+                    .row
+                        .filters-group-wrap(class='col-12 py-3')
+                            .filters-group
+                                
+                                .btn-group.filter-options
+                                    button.btn.btn-secondary(data-group='space') Space
+                                    button.btn.btn-secondary(data-group='nature') Nature
+                                    button.btn.btn-secondary(data-group='animal') Animal
+                                    button.btn.btn-secondary(data-group='city') City
+                
+                hr.py-3
+
+                .container
+                    #grid.row.my-shuffle-container
+                        
+                        figure.picture-item(class='col-3', data-groups='["nature"]', data-date-created='2017-04-30', data-title='Lake Walchen')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='A deep blue lake sits in the middle of vast hills covered with evergreen trees')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://source.unsplash.com/random', target='_blank', rel='noopener') Lake Walchen
+                                    p.picture-item__tags(class='hidden-xs') nature
+                        
+                        figure.picture-item.picture-item--overlay(class='col-3', data-groups='["city"]', data-date-created='2016-07-01', data-title='Golden Gate Bridge')
+                            .picture-item__inner
+                                img(class='img-fluid', src='https://source.unsplash.com/random', alt='Looking down over one of the pillars of the Golden Gate Bridge to the roadside and water below')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/RRNbMiPmTZY', target='_blank', rel='noopener') Golden Gate Bridge
+                                    p.picture-item__tags(class='hidden-xs') city
+                        
+                        figure.picture-item(class='col-3', data-groups='["animal"]', data-date-created='2016-08-12', data-title='Crocodile')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='A close, profile view of a crocodile looking directly into the camera')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/YOX8ZMTo7hk', target='_blank', rel='noopener') Crocodile
+                                    p.picture-item__tags(class='hidden-xs') animal
+                        
+                        figure.picture-item.picture-item--h2(class='col-3', data-groups='["space"]', data-date-created='2016-03-07', data-title='SpaceX')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='SpaceX launches a Falcon 9 rocket from Cape Canaveral Air Force Station')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/GDdRP7U5ct0', target='_blank', rel='noopener') SpaceX
+                                    p.picture-item__tags(class='hidden-xs') space
+                                p.picture-item__description SpaceX launches a Falcon 9 rocket from Cape Canaveral Air Force Station
+                        
+                        figure.picture-item(class='col-3', data-groups='["city"]', data-date-created='2016-06-09', data-title='Crossroads')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='A multi-level highway stack interchange in Puxi, Shanghai')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/7nrsVjvALnA', target='_blank', rel='noopener') Crossroads
+                                    p.picture-item__tags(class='hidden-xs') city
+
+                        figure.picture-item(class='col-3', data-groups='["city"]', data-date-created='2016-06-09', data-title='Crossroads')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='A multi-level highway stack interchange in Puxi, Shanghai')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/7nrsVjvALnA', target='_blank', rel='noopener') Crossroads
+                                    p.picture-item__tags(class='hidden-xs') city
+
+                        figure.picture-item(class='col-3', data-groups='["city"]', data-date-created='2016-06-09', data-title='Crossroads')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='A multi-level highway stack interchange in Puxi, Shanghai')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/7nrsVjvALnA', target='_blank', rel='noopener') Crossroads
+                                    p.picture-item__tags(class='hidden-xs') city            
+                        
+                        figure.picture-item.picture-item--overlay(class='col-6', data-groups='["space","nature"]', data-date-created='2016-06-29', data-title='Milky Way')
+                            .picture-item__inner
+                                img(class='img-fluid', src='https://source.unsplash.com/random', alt='Dimly lit mountains give way to a starry night showing the Milky Way')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/_4Ib-a8g9aA', target='_blank', rel='noopener') Milky Way
+                                    p.picture-item__tags(class='hidden-xs') space, nature
+                        
+                        figure.picture-item.picture-item--h2(class='col-6', data-groups='["space"]', data-date-created='2015-11-06', data-title='Earth')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='NASA Satellite view of Earth')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/yZygONrUBe8', target='_blank', rel='noopener') Earth
+                                    p.picture-item__tags(class='hidden-xs') space
+                                p.picture-item__description NASA Satellite view of Earth
+                        
+                        figure.picture-item.picture-item--h2(class='col-3', data-groups='["animal"]', data-date-created='2015-07-23', data-title='Turtle')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='A close up of a turtle underwater')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/L-2p8fapOA8', target='_blank', rel='noopener') Turtle
+                                    p.picture-item__tags(class='hidden-xs') animal
+                                p.picture-item__description A close up of a turtle underwater
+                        
+                        figure.picture-item(class='col-3', data-groups='["nature"]', data-date-created='2014-10-12', data-title='Stanley Park')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='Many trees stand alonside a hill which overlooks a pedestrian path, next to the ocean at Stanley Park in Vancouver, Canada')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/b-yEdfrvQ50', target='_blank', rel='noopener') Stanley Park
+                                    p.picture-item__tags(class='hidden-xs') nature
+                        
+                        figure.picture-item(class='col-3', data-groups='["animal"]', data-date-created='2017-01-12', data-title='Astronaut Cat')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random', alt='An intrigued cat sits in grass next to a flag planted in front of it with an astronaut space kitty sticker on beige fabric.')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/FqkBXo2Nkq0', target='_blank', rel='noopener') Astronaut Cat
+                                    p.picture-item__tags(class='hidden-xs') animal
+                        
+                        figure.picture-item.picture-item--overlay(class='col-3', data-groups='["city"]', data-date-created='2017-01-19', data-title='San Francisco')
+                            .picture-item__inner
+                                img(class='img-fluid', src='https://source.unsplash.com/random?', alt="Pier 14 at night, looking towards downtown San Francisco's brightly lit buildings")
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/h3jarbNzlOg', target='_blank', rel='noopener') San Francisco
+                                    p.picture-item__tags(class='hidden-xs') city
+                        
+                        figure.picture-item(class='col-3', data-groups='["nature","city"]', data-date-created='2015-10-20', data-title='Central Park')
+                            .picture-item__inner
+                                .aspect.aspect--16x9
+                                    .aspect__inner
+                                        img(class='img-fluid', src='https://source.unsplash.com/random/', alt='Looking down on central park and the surrounding builds from the Rockefellar Center')
+                                .picture-item__details
+                                    figcaption.picture-item__title
+                                        a(href='https://unsplash.com/photos/utwYoEu9SU8', target='_blank', rel='noopener') Central Park
+                                    p.picture-item__tags(class='hidden-xs') nature, city
+                        .my-sizer-element(class='col-1')
+        
+
+        include _partials/footer
+
+        include _partials/scripts
+
+        script.
+        
+            var Shuffle = window.Shuffle;
+            var element = document.querySelector('.my-shuffle-container');
+            var sizer = element.querySelector('.my-sizer-element');
+
+            var shuffleInstance = new Shuffle(element, {
+                itemSelector: '.picture-item',
+                sizer: sizer 
+            });
+
+            $('[data-group="nature"]').on("click", function() {
+                shuffleInstance.filter('nature');
+            });
+
+            $('[data-group="space"]').on("click", function() {
+                shuffleInstance.filter('space');
+            });
+            
+            $('[data-group="animal"]').on("click", function() {
+                shuffleInstance.filter('animal');
+            });
+
+            $('[data-group="city"]').on("click", function() {
+                shuffleInstance.filter('city');
+            });
